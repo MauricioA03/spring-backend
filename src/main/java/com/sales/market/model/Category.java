@@ -1,6 +1,9 @@
 package com.sales.market.model;
 
-public class Category {
+import javax.persistence.Entity;
+
+@Entity
+public class Category extends ModelBase {
     private String name;
     private String code;
 
