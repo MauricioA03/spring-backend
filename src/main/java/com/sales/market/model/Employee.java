@@ -12,8 +12,11 @@ public class Employee extends ModelBase {
     private String lastName;
     private Byte[] image;
 
-    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
+    //    por defecto en fields es EAGER y en colleciones es LAZY y  todo valor booleano es true
+    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
     private List<Contract> contracts;
+//    mapped by employee es el nombre de la variable en contrato correpondiente a el field Employee
+//    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
 
     public String getFirstName() {
         return firstName;

@@ -13,7 +13,7 @@ public class ModelBase {
     private Long id;
 
     @CreatedDate
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.TIMESTAMP) //es necesario por que requiere un contexto
     @Column(nullable = false, updatable = false)
     private Date createdOn;
 
