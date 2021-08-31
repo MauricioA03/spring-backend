@@ -17,3 +17,5 @@ public class BuyDto extends DtoBase<Buy> {
         this.value = value;
     }
 }
+
+

@@ -19,3 +19,4 @@ public class Buy extends ModelBase<BuyDto> {
         this.value = value;
     }
 }
+
