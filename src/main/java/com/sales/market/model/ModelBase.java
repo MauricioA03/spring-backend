@@ -1,5 +1,6 @@
 package com.sales.market.model;
 
+import com.sales.market.dto.DtoBase;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
@@ -7,7 +8,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @MappedSuperclass
-public class ModelBase {
+public class ModelBase<D extends DtoBase> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

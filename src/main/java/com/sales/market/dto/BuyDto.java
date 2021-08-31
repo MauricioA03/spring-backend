@@ -1,15 +1,13 @@
 package com.sales.market.dto;
 
-import com.sales.market.model.ModelBase;
+import com.sales.market.model.Buy;
 
 import java.math.BigDecimal;
 
 
-public class BuyDto extends ModelBase {
+public class BuyDto extends DtoBase<Buy> {
 
     private BigDecimal value;
-
-    private long version;
 
     public BigDecimal getValue() {
         return value;
