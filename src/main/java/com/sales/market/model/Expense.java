@@ -1,7 +1,3 @@
-/**
- * @author: Edson A. Terceros T.
- */
-
 package com.sales.market.model;
 
 import com.sales.market.dto.ExpenseDto;
