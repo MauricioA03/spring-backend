@@ -4,7 +4,6 @@ import com.sales.market.model.Buy;
 
 import java.math.BigDecimal;
 
-
 public class BuyDto extends DtoBase<Buy> {
 
     private BigDecimal value;
@@ -17,5 +16,3 @@ public class BuyDto extends DtoBase<Buy> {
         this.value = value;
     }
 }
-
-

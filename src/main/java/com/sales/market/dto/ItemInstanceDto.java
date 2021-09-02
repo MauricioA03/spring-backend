@@ -11,6 +11,7 @@ public class ItemInstanceDto extends DtoBase<ItemInstance> {
     // todo generalmente se usa BigDecimal
     private Double price;
 
+
     public ItemDto getItem() {
         return item;
     }
