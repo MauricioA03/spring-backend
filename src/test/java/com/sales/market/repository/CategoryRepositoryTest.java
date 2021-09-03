@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class CategoryRepositoryTest {
 
+
     @Autowired
     private CategoryRepository categoryRepository;
 
