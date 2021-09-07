@@ -8,11 +8,15 @@ import org.springframework.stereotype.Service;
 public class BuyService {
     //otros servicios
     //servicioItemDetails
-    private BuyRespository buyRespository;  // nunca debes tener acceso a otros repositorios que no sean en este caso
+    private final BuyRespository buyRespository;  // nunca debes tener acceso a otros repositorios que no sean en este caso
     // Buy
 
     public BuyService(BuyRespository buyRespository) {
         this.buyRespository = buyRespository;
+    }
+
+    public Buy getById(Long id) {
+        return buyRespository.getById(id);
     }
 
     public Buy save(Buy buy) {

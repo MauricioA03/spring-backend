@@ -1,13 +1,15 @@
 package com.sales.market.model;
 
 import javax.persistence.Entity;
-// cambios en Buy, Contract, employee, Item
+import javax.persistence.ManyToOne;
+
 @Entity
 public class SubCategory extends ModelBase {
     private String name;
     private String code;
-//    @OneToOne(optional = false)
-//    private Category category;
+
+    @ManyToOne(optional = false)
+    private Category category;
 
     public String getName() {
         return name;
@@ -25,11 +27,4 @@ public class SubCategory extends ModelBase {
         this.code = code;
     }
 
-//    public Category getCategory() {
-//        return category;
-//    }
-//
-//    public void setCategory(Category category) {
-//        this.category = category;
-//    }
 }
