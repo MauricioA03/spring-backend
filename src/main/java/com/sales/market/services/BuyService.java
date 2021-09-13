@@ -1,22 +1,22 @@
 package com.sales.market.services;
 
 import com.sales.market.model.Buy;
-import com.sales.market.repository.BuyRespository;
+import com.sales.market.repository.BuyRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 public class BuyService {
     //otros servicios
     //servicioItemDetails
-    private final BuyRespository buyRespository;  // nunca debes tener acceso a otros repositorios que no sean en este caso
+    private final BuyRepository buyRepository;  // nunca debes tener acceso a otros repositorios que no sean en este caso
     // Buy
 
-    public BuyService(BuyRespository buyRespository) {
-        this.buyRespository = buyRespository;
+    public BuyService(BuyRepository buyRepository) {
+        this.buyRepository = buyRepository;
     }
 
     public Buy getById(Long id) {
-        return buyRespository.getById(id);
+        return buyRepository.getById(id);
     }
 
     public Buy save(Buy buy) {
@@ -27,7 +27,7 @@ public class BuyService {
         //servicioItemDetails.ofertas  -> descuento precui del item  en buy
         //servicioItemDetails.getcoupon   -X%desc     persiste  cliente vendiendo
         // llamadas a BD mas info de configuran
-        Buy savePersisted = buyRespository.save(buy);
+        Buy savePersisted = buyRepository.save(buy);
         return savePersisted;
     }
 }

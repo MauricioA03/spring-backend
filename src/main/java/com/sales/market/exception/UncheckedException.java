@@ -1,4 +1,4 @@
-package com.sales.market.Laboratorio9;
+package com.sales.market.exception;
 
 public class UncheckedException extends RuntimeException {
     public UncheckedException() {

@@ -1,4 +1,7 @@
-package com.sales.market.Laboratorio9;
+package com.sales.market.dto;
+
+import com.sales.market.exception.CheckedException;
+import com.sales.market.exception.UncheckedException;
 
 public class CategoryDto {
     private boolean sanitizado;

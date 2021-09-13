@@ -14,7 +14,7 @@ public class Item extends ModelBase {
     private String description;
     @Lob
     private Byte[] image;
-    @OneToOne(targetEntity = SubCategory.class)
+    @OneToOne(targetEntity = SubCategory.class)//redundante el targetEntity
     private SubCategory subCategory;
 
     @OneToMany

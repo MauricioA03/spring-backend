@@ -1,5 +1,8 @@
 package com.sales.market.Laboratorio9;
 
+import com.sales.market.dto.CategoryDto;
+import com.sales.market.exception.CheckedException;
+import com.sales.market.exception.UncheckedException;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

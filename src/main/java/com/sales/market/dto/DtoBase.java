@@ -1,6 +1,3 @@
-/**
- * @author: Edson A. Terceros T.
- */
 package com.sales.market.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;

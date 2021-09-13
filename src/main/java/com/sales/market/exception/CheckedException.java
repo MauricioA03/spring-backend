@@ -1,6 +1,6 @@
-package com.sales.market.Laboratorio9;
+package com.sales.market.exception;
 
-public class CheckedException extends RuntimeException {
+public class CheckedException extends Exception {
     public CheckedException() {
         super();
     }
