@@ -1,4 +1,4 @@
-package com.sales.market.services;
+package com.sales.market.service;
 
 import com.sales.market.model.AccountAux;
 import org.junit.jupiter.api.Test;

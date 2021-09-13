@@ -1,7 +1,7 @@
 package com.sales.market.repository;
 
 import com.sales.market.model.AccountAux;
-import com.sales.market.services.AccountAuxService;
+import com.sales.market.service.AccountAuxService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

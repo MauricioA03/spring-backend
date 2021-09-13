@@ -2,8 +2,9 @@ package com.sales.market.dto;
 
 import com.sales.market.exception.CheckedException;
 import com.sales.market.exception.UncheckedException;
+import com.sales.market.model.Category;
 
-public class CategoryDto {
+public class CategoryDto extends DtoBase<Category> {
     private boolean sanitizado;
     private String code;
 
@@ -37,5 +38,4 @@ public class CategoryDto {
         if (this.code.length() < 5) throw new UncheckedException();
         return true;
     }
-
 }
