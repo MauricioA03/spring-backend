@@ -1,3 +1,7 @@
+/**
+ * @author: Edson A. Terceros T.
+ */
+
 package com.sales.market.util;
 
 import org.hibernate.cfg.NotYetImplementedException;

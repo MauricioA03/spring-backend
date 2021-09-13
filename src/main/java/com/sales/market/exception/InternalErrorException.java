@@ -1,3 +1,7 @@
+/**
+ * @author: Edson A. Terceros T.
+ */
+
 package com.sales.market.exception;
 
 import org.springframework.http.HttpStatus;

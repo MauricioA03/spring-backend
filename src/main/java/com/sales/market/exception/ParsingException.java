@@ -1,3 +1,7 @@
+/**
+ * @author: Edson A. Terceros T.
+ */
+
 package com.sales.market.exception;
 
 import org.springframework.http.HttpStatus;
@@ -25,5 +29,3 @@ public class ParsingException extends RuntimeException {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
-
-

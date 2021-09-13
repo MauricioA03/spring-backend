@@ -1,3 +1,6 @@
+/**
+ * (C) 2017 Agilysys NV, LLC.  All Rights Reserved.  Confidential Information of Agilysys NV, LLC.
+ */
 package com.sales.market.exception;
 
 import org.springframework.http.HttpStatus;

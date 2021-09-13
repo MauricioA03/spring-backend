@@ -1,3 +1,7 @@
+/**
+ * @author: Edson A. Terceros T.
+ */
+
 package com.sales.market.dto;
 
 import com.sales.market.model.Sale;
