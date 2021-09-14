@@ -7,6 +7,15 @@ import com.sales.market.model.Category;
 public class CategoryDto extends DtoBase<Category> {
     private boolean sanitizado;
     private String code;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public CategoryDto() {
         this.sanitizado = false;

@@ -7,9 +7,10 @@ import javax.persistence.ManyToOne;
 public class SubCategory extends ModelBase {
     private String name;
     private String code;
-
-    @ManyToOne(optional = false)
+    @ManyToOne
     private Category category;
+
+    private Long cateId;  /// DTO
 
     public String getName() {
         return name;
@@ -26,5 +27,4 @@ public class SubCategory extends ModelBase {
     public void setCode(String code) {
         this.code = code;
     }
-
 }
