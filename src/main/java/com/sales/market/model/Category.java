@@ -1,9 +1,4 @@
-/**
- * @author: Edson A. Terceros T.
- */
-
 package com.sales.market.model;
-
 
 import com.sales.market.dto.CategoryDto;
 
@@ -13,8 +8,6 @@ import javax.persistence.Entity;
 public class Category extends ModelBase<CategoryDto> {
     private String name;
     private String code;
-    private boolean sanitizado;
-
 
     public String getName() {
         return name;
@@ -26,14 +19,6 @@ public class Category extends ModelBase<CategoryDto> {
 
     public String getCode() {
         return code;
-    }
-
-    public boolean isSanitizado() {
-        return sanitizado;
-    }
-
-    public void setSanitizado(boolean sanitizado) {
-        this.sanitizado = sanitizado;
     }
 
     public void setCode(String code) {

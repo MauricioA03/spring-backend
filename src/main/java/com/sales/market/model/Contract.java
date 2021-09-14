@@ -9,7 +9,7 @@ import java.util.Date;
 public class Contract extends ModelBase {
     @ManyToOne(optional = false)
     private Employee employee;
-    @OneToOne(optional = false)
+    @OneToOne(optional = true)
     private Position position;
     private Date initDate;
     private Date endDate;
