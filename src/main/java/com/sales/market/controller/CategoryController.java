@@ -1,7 +1,3 @@
-/**
- * @author: Edson A. Terceros T.
- */
-
 package com.sales.market.controller;
 
 import com.sales.market.dto.CategoryDto;

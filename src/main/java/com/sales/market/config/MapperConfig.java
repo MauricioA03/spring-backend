@@ -9,8 +9,6 @@ public class MapperConfig {
 
     @Bean
     public ModelMapper getModelMapper() {
-        //centralizar como se comportara el mapper para toda la applicacion
-        ModelMapper modelMapper = new ModelMapper();
-        return modelMapper;
+        return new ModelMapper();
     }
 }
