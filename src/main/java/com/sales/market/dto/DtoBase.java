@@ -4,6 +4,7 @@
 
 package com.sales.market.dto;
 
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sales.market.model.ModelBase;
 import org.modelmapper.ModelMapper;
@@ -59,6 +60,24 @@ public class DtoBase<E extends ModelBase> {
             return Collections.emptyList();
         }
         return convert(elements, mapper);
+    }
+
+    public <D extends DtoBase> Set<D> toSetDto(Set<E> elements, ModelMapper mapper) {
+        if (elements == null || elements.isEmpty()) {
+            return Collections.emptySet();
+        }
+        return convertToSet(elements, mapper);
+    }
+
+    @SuppressWarnings("unchecked")
+    protected <D extends DtoBase> Set<D> convertToSet(Collection<E> elements, ModelMapper mapper) {
+        return (Set<D>) elements.stream().map(element -> {
+            try {
+                return this.getClass().newInstance().toDto(element, mapper);
+            } catch (InstantiationException | IllegalAccessException e) {
+                return new DtoBase<>();
+            }
+        }).sorted(Comparator.comparing(DtoBase::getId)).collect(Collectors.toSet());
     }
 
     @SuppressWarnings("unchecked")
