@@ -10,5 +10,5 @@ import com.sales.market.model.SubCategory;
 import java.util.List;
 
 public interface SubCategoryRepository extends GenericRepository<SubCategory> {
-    List<SubCategory> findAllByCategoryId(Long categoryId);
+    List<SubCategory> findAllByCategoryId(Long categoryId); //busqueda en profundidad subcategory - category - categoryID
 }

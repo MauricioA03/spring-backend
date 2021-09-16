@@ -14,6 +14,7 @@ public class Category extends ModelBase<CategoryDto> {
     private String code;
 
     @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
+//eager es para que por defecto simrep traiga a los subcategoreis
     private Set<SubCategory> subCategories = new HashSet<>();
 
     public String getName() {

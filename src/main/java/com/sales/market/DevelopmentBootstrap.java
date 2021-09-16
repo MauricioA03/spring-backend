@@ -7,7 +7,6 @@ import com.sales.market.service.CategoryService;
 import com.sales.market.service.ItemInstanceService;
 import com.sales.market.service.ItemService;
 import com.sales.market.service.SubCategoryService;
-import com.sales.market.util.ImageUtils;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
@@ -77,11 +76,11 @@ public class DevelopmentBootstrap implements ApplicationListener<ContextRefreshe
         item.setCode("B-MALTIN");
         item.setName("MALTIN");
         item.setSubCategory(subCategory);
-        try {
-            item.setImage(ImageUtils.inputStreamToByteArray(getResourceAsStream("/images/maltin.jpg")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            item.setImage(ImageUtils.inputStreamToByteArray(getResourceAsStream("/images/maltin.jpg")));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         return itemService.save(item);
     }
 

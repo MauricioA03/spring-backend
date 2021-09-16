@@ -35,10 +35,11 @@ public class CategoryDto extends DtoBase<Category> {
         this.subCategories = subCategories;
     }
 
-    @Override
-    public CategoryDto toDto(Category category, ModelMapper mapper) {
-        CategoryDto categoryDto = super.toDto(category, mapper);
-        categoryDto.setSubCategories(new SubCategoryDto().toSetDto(category.getSubCategories(), mapper));
-        return categoryDto;
-    }
+//invoca la padre y setea los subcategories
+@Override
+public CategoryDto toDto(Category category, ModelMapper mapper) {
+    CategoryDto categoryDto = super.toDto(category, mapper);
+    categoryDto.setSubCategories(new SubCategoryDto().toSetDto(category.getSubCategories(), mapper));
+    return categoryDto;
+}
 }
