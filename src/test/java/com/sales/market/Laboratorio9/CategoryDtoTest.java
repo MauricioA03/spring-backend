@@ -1,9 +1,11 @@
 package com.sales.market.Laboratorio9;
 
+import org.junit.jupiter.api.Test;
+
 public class CategoryDtoTest {
-//
-//    @Test
-//    public void givenCategoryDTOWithCodeLengthLessThanMinimunSizeWhenCategoryDTO_validateThenCheckedErrorShouldBeCatchAndYouShouldRecoverWithTrailingXCharacters() {
+    //
+    @Test
+    public void givenCategoryDTOWithCodeLengthLessThanMinimunSizeWhenCategoryDTO_validateThenCheckedErrorShouldBeCatchAndYouShouldRecoverWithTrailingXCharacters() {
 //        CategoryDto categoryDto = new CategoryDto();
 //        categoryDto.setCode("ABC");
 //        try {
@@ -26,5 +28,5 @@ public class CategoryDtoTest {
 //        CategoryDto categoryDto = new CategoryDto();
 //        categoryDto.setCode("ABC");
 //        categoryDto.validateUnchecked();
-//    }
+    }
 }
